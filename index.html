@@ -69,6 +69,58 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-手撕LevelDB-编译" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/12/09/%E6%89%8B%E6%92%95LevelDB-%E7%BC%96%E8%AF%91/" class="article-date">
+  <time class="dt-published" datetime="2023-12-09T15:25:56.000Z" itemprop="datePublished">2023-12-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/12/09/%E6%89%8B%E6%92%95LevelDB-%E7%BC%96%E8%AF%91/">手撕LevelDB-编译</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="仓库下载"><a href="#仓库下载" class="headerlink" title="仓库下载"></a>仓库下载</h2><pre><code>git clone git@github.com:google/leveldb.git
+</code></pre>
+<h2 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h2><ol>
+<li>cd leveldb</li>
+<li>git clone <a target="_blank" rel="noopener" href="https://github.com/google/googletest.git">https://github.com/google/googletest.git</a></li>
+<li>git clone <a target="_blank" rel="noopener" href="https://github.com/google/benchmark.git">https://github.com/google/benchmark.git</a></li>
+<li>mkdir build &amp;&amp; cd build</li>
+<li>cmake -DCMAKE_BUILD_TYPE&#x3D;Release .. &amp;&amp; cmake –build .</li>
+</ol>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><pre><code>third_party/benchmark does not contain a CMakeLists.txt file.
+</code></pre>
+<p>编译时遇上以上报错，简易重新执行第2-3步。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/12/09/%E6%89%8B%E6%92%95LevelDB-%E7%BC%96%E8%AF%91/" data-id="clpy7u9on0002cqr354398gbn" data-title="手撕LevelDB-编译" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LevelDB/" rel="tag">LevelDB</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-C++实现计时器" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/12/09/C++%E5%AE%9E%E7%8E%B0%E8%AE%A1%E6%97%B6%E5%99%A8/" class="article-date">
@@ -165,10 +217,12 @@ Function();
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/12/09/C++%E5%AE%9E%E7%8E%B0%E8%AE%A1%E6%97%B6%E5%99%A8/" data-id="clpxscdeo0000tbr350v37zxu" data-title="C++实现计时器" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/12/09/C++%E5%AE%9E%E7%8E%B0%E8%AE%A1%E6%97%B6%E5%99%A8/" data-id="clpy7u9ol0001cqr36kvtb9l9" data-title="C++实现计时器" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+
     </footer>
   </div>
   
@@ -216,7 +270,7 @@ Function();
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/12/09/hello-world/" data-id="clpxscdes0001tbr3ctvce3de" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/12/09/hello-world/" data-id="clpy7u9oh0000cqr3ey0udju3" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -238,9 +292,23 @@ Function();
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LevelDB/" rel="tag">LevelDB</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C/" style="font-size: 10px;">C++</a> <a href="/tags/LevelDB/" style="font-size: 10px;">LevelDB</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -257,6 +325,10 @@ Function();
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/12/09/%E6%89%8B%E6%92%95LevelDB-%E7%BC%96%E8%AF%91/">手撕LevelDB-编译</a>
+          </li>
         
           <li>
             <a href="/2023/12/09/C++%E5%AE%9E%E7%8E%B0%E8%AE%A1%E6%97%B6%E5%99%A8/">C++实现计时器</a>
